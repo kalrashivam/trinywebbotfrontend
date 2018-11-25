@@ -4,16 +4,21 @@ import {Link} from 'react-router-dom';
 
 const Header = () => {
     return (
-        <nav>
-            <ul>
-                <li>
-                    <Link to ={"/"}>Home</Link>
-                </li>
-                <li>
-                    <Link to={"/Analytics"} >Analytics</Link>
-                </li>
-            </ul>
-        </nav>
+        <div className="nav-wrapper">
+            <nav>
+                <ul>
+                    <li>
+                    <Link to={"/"} className="brand-Logo">Logo</Link>
+                    </li>
+                    <li>
+                        <Link to ={"/"}>Home</Link>
+                    </li>
+                    <li>
+                        <Link to={"/Analytics"} >Analytics</Link>
+                    </li>
+                </ul>
+            </nav>    
+        </div>
     )
 }
 
